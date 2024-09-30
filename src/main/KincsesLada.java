@@ -4,8 +4,10 @@
  */
 package main;
 
+import control.FelugroVezerlo;
 import control.KonzolVezerlo;
 import modell.JatekModell;
+import view.FelugroNezet;
 import view.KonzolNézet;
 
 /**
@@ -17,9 +19,13 @@ public class KincsesLada {
     public static void main(String[] args) {
         //new JatekModell();
         
-        JatekModell modell = new JatekModell();
+        /*JatekModell modell = new JatekModell();
         KonzolNézet nezet = new KonzolNézet();
-        new KonzolVezerlo(modell, nezet);
+        new KonzolVezerlo(modell, nezet);*/
+        
+        JatekModell modell = new JatekModell();
+        FelugroNezet nezet = new FelugroNezet();
+        new FelugroVezerlo(modell, nezet);
     }
     
     
